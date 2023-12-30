@@ -1,0 +1,67 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.main{
+    font-family: $dm-sans;
+    @include breakpoint-down(small){
+        padding: 0px rem(19px);
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: rem(105px);
+        width: rem(450px);
+        background-color:$soft-red;
+        border-radius: 10px;
+        color: white;
+        padding: rem(30px);
+        @include breakpoint-down(small){
+            height: rem(100px);
+            width: rem(350px);
+            padding: rem(65px) rem(15px);
+            padding: rem(25px);
+        }
+        .left{
+            &__top{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .bottom{
+        width: rem(450px);
+        background-color: $very-pale-orange;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: rem(44px) rem(35px);
+        @include breakpoint-down(small){
+            width: rem(350px);
+            padding: 29px 20px;
+           
+        }
+        canvas{
+            height: rem(230px);
+            width: rem(380px);
+            margin-top: 7px;
+            @include breakpoint-down(small){
+                width: rem(310px);
+                height: rem(245px);
+            }
+        }
+        hr{
+            margin:rem(30px) 0;
+            color: $cream;
+        }
+        &__total{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+         p{
+            font-size: 0.9rem;
+            color: $medium-brown;
+         }   
+        }
+    }
+
+
+}
