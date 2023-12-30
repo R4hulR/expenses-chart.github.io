@@ -1,7 +1,7 @@
 const Chart = window.Chart;
 const ctx = document.getElementById('canvas');
 
-fetch('../../data.json')
+fetch('data.json')
   .then(response => response.json())
   .then(data => {
     createBarChart(data);
