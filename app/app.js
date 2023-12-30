@@ -1,7 +1,7 @@
 const Chart = window.Chart;
 const ctx = document.getElementById('canvas');
 
-fetch('data.json')
+fetch('C:\Users\RAHUL RAY\Desktop\expenses-chart-component-main\app\data.json')
   .then(response => response.json())
   .then(data => {
     createBarChart(data);
